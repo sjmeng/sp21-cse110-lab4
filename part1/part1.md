@@ -19,27 +19,27 @@
 10. Output is 3, because the scope of length extends to the block that console.log is in and length = prices.length(which is three because it contains three items).
 11. It will return discounted, which contains [50,100,150]. discounted is declared outside the for loop, and the code inside the for loop can add items to discounted because you can modify const arrays in certain ways.
 12. 
-     a) student.name
-     b)student["Grad Year"]
-     c)student.greeting()
-     d) student["Favorite Teacher"].name
-     e)student.courseLoad[0];
+- (a) student.name
+- (b) student["Grad Year"]
+- (c) student.greeting()
+- (d) student["Favorite Teacher"].name
+- (e) student.courseLoad[0];
 13.  
-    a) 32. JS interprets the + as concatenating a string '2' to '3'
-    b) 1. The - operator prompts the interpeter to convert '3' to a number to be subtracted from
-    c) 3. null is treated as a zero, and 3 + 0 = 3
-    d) 3null. The interpreter treats null as a string that needs to be concatenated to string '3'
-    e) 4. When an operation involves a number and a boolean, the boolean is converted to a number. True is converted to 1, and 3 + 1 = 4.
-    f) 0. Both false and null are converted to 0.
-    g) 3undefined. undefined is converted to a string and concatenated onto '3'
-    h) NaN. The - operator in this case will try to convert the types so a number is subtracted from a number. The operation 3 - undefined (which is not a number) will result a NaN result, as well.
+- (a) 32. JS interprets the + as concatenating a string '2' to '3'
+- (b) 1. The - operator prompts the interpeter to convert '3' to a number to be subtracted from
+- (c) 3. null is treated as a zero, and 3 + 0 = 3
+- (d) 3null. The interpreter treats null as a string that needs to be concatenated to string '3'
+- (e) 4. When an operation involves a number and a boolean, the boolean is converted to a number. True is converted to 1, and 3 + 1 = 4.
+- (f) 0. Both false and null are converted to 0.
+- (g) 3undefined. undefined is converted to a string and concatenated onto '3'
+- (h) NaN. The - operator in this case will try to convert the types so a number is subtracted from a number. The operation 3 - undefined (which is not a number) will result a NaN result, as well.
 14. 
-    a) true. The interpreter converts the string to a number when comparing a string and a number.
-    b) false. The interpretor compares the strings alphabetically, and alphabetically char 1 is less than char 2.
-    c) true. The == operator checks for loose equality and performs type coercion, converting the string '2' to a number. 2 == 2, so it's true.
-    d) false. The === operator checks for strict equality; if the things we are comparing don't have the same type AND the same value, it will return false. Since we're comparing a number and a string, it will return false.
-    e) false. true == 1 (but does not === 1)
-    f) true. The Boolean() type cast returns true if the value passed into it is a number that's not zero (among other stipulations). Therefore, Boolean(2) = true === true
+- (a) true. The interpreter converts the string to a number when comparing a string and a number.
+- (b) false. The interpretor compares the strings alphabetically, and alphabetically char 1 is less than char 2.
+- (c) true. The == operator checks for loose equality and performs type coercion, converting the string '2' to a number. 2 == 2, so it's true.
+- (d) false. The === operator checks for strict equality; if the things we are comparing don't have the same type AND the same value, it will return false. Since we're comparing a number and a string, it will return false.
+- (e) false. true == 1 (but does not === 1)
+- (f) true. The Boolean() type cast returns true if the value passed into it is a number that's not zero (among other stipulations). Therefore, Boolean(2) = true === true
 15. Like I touched on in 14, the == operator checks for loose equality and performs type coercion, which means you can compare values of different types and still get true as a result. For example, 1 == '1' is true. The === operator checks for strict equality, which means that the values being compared must be the same type and actual value to return true. '1' === 1 is false.
 16. Refer to part1b-question16.js
 17.  The result is that newArr is returned with the values [2,4,6]. modifyArray runs with the parameters of [1,2,3] and doSomething. The for loop in modifyArray iterates three times because array has three items, where it accesses each index of array and uses callbacks to run the doSomething function on the value held in that index of array. That means the for loop first multiplies 1 by 2 and stores it in newArr, multiplies 2 by 2 and stores it, and finally multiplies 3 by 2 and stores it.
