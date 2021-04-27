@@ -1,16 +1,16 @@
 ## Part 1a
 1. 20
-2. ??Undefined, the var declaration is processed but the assignment is not since it's in the if(add) block.
+2. 20
 3. 20
 4. Error, result can't be accessed outside of the if(add) block.
 5. Error, cannot reassign value to const result.
-6. Error, cannot reassign value to const result.
+6. Error, result is not in the scope of the console.log() command.
 
 ## Part 1b
-1. Output is 3. There are three entries in the prices array, which means var i is incremented three times.
+1. Output is 3. There are three entries in the prices array, which means var i is incremented three times. Since i is declared with var, it's in the scope of console.log.
 2. Output is 150. The last item in the prices array, 300, overwrites the previous discountedPrice value and replaces it with 300*(1-0.5) = 150.
 3. Output is 150. The discountedPrice is 150, and discountedPrice * 100 rounded and then divided by 100 is 150.
-4. The function returns discounted, but nothing is printed since there isn't a console.log
+4. The function returns discounted, or [50,100,150], but nothing is printed since there isn't a console.log. The for loop takes each price in the prices array and applies the discount and then rounds it before pushing it into the discounted array.
 5. Error, we can't print i because the scope of i is only in the for loop based on the use of the let keyword.
 6. Error, the use of let to declare discountedPrice narrows the scope to inside the for loop.
 7. Output is 150. We can access finalPrice because the declaration and console.log(finalPrice) are in the same block.
